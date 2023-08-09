@@ -1,0 +1,19 @@
+{
+  "name": "love-hate",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.17.0",
+    "nuxt": "^3.6.5",
+    "eslint-config-goodbyte-styleguide-typescript": "^0.0.4",
+    "eslint": "^8.45.0"
+  }
+}

@@ -1,0 +1,1 @@
+	routeRules: { '/': { redirect: '/love/hate' }},
