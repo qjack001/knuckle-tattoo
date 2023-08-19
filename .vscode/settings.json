@@ -22,4 +22,7 @@
 		".gitattributes": true,
 		"LICENSE": true,
 	},
+	"cSpell.words": [
+		"enuf"
+	],
 }

@@ -6,5 +6,5 @@ export default defineNuxtConfig({
 		layoutTransition: false,
 		pageTransition: false,
 	},
-	routeRules: { '/': { redirect: '/love/hate' }},
+	routeRules: { '/': { redirect: '/fair/enuf' }},
 })
