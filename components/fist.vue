@@ -65,16 +65,16 @@
 		outline: none;
 		margin: 0;
 		padding: 0;
-		padding-left: 35px;
+		padding-left: 40px;
 		background: transparent;
 
 		font-family: inherit;
 		text-transform: uppercase;
-		font-size: 40px;
-		letter-spacing: 0.8em;
+		font-size: 60px;
+		letter-spacing: 0.7em;
 		width: 300px;
 
-		transform: scaleY(1.6) rotate3d(0, 1, 0.11, 327deg) translateX(-28px);
+		transform: rotate3d(0, 1, 0.11, 327deg) translateX(-28px);
 		filter: drop-shadow(0 0 7px rgb(0 0 0 / 40%));
 		opacity: 0.8;
 	}
@@ -82,7 +82,7 @@
 	.fist[data-hand="left"] input,
 	.fist[data-hand="left"] p
 	{
-		transform: scaleY(1.6) rotate3d(0, 1, 0.11, -327deg) translateX(50px);
+		transform: rotate3d(0, 1, 0.11, -327deg) translateX(50px);
 	}
 
 	.fist p

@@ -15,7 +15,7 @@
 	@font-face
 	{
 		font-family: 'Sailor Fat Tattoo';
-		src: url('/font/Sailors-Fat-Tattoo-Script.woff2');
+		src: url('/font/Cristone.ttf');
 	}
 
 	body
