@@ -14,15 +14,16 @@
 <style>
 	@font-face
 	{
-		font-family: 'Sailor Fat Tattoo';
-		src: url('/font/Cristone.ttf');
+		font-family: 'Cristone';
+		src: url('https://fonts.goodbyte.ca/cristone-uppercase.woff2') format('woff2'),
+			url('https://fonts.goodbyte.ca/cristone-uppercase.woff') format('woff');
 	}
 
 	body
 	{
 		margin: 0;
 		background: white;
-		font-family: 'Sailor Fat Tattoo', serif;
+		font-family: 'Cristone', serif;
 	}
 
 	.screen-reader-only
