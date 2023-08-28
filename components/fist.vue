@@ -26,7 +26,7 @@
 	const props = defineProps<{
 		text: string
 		hand: 'left' | 'right'
-		color: 'white' | 'yelow' | 'light-skin-tone'
+		color: typeof ColorOptions
 	}>()
 
 	const emit = defineEmits<{ update: (text: string) => void }>()
@@ -40,7 +40,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		
+
 		width: 250px;
 		aspect-ratio: 1 / 1;
 		perspective: 320px;

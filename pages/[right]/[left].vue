@@ -14,26 +14,27 @@
 			@update="(input: string) => leftHand = input"
 		/>
 	</main>
-	<ColorSelect :default="ColorOptions.WHITE" @update="(selected) => color = selected"/>
+	<ColorSelect :default="color" @update="(selected) => color = selected"/>
 </template>
 
 <script setup lang="ts">
 	import { ColorOptions } from '@/components/color-options'
 
 	const { params } = useRoute()
-
 	const rightHand = ref(params.right as string)
 	const leftHand = ref(params.left as string)
 
 	const updatePath = () => {
-		const url = `/${encodeURIComponent(rightHand.value)}/${encodeURIComponent(leftHand.value)}`
-		history.pushState({}, '', url)
+		const right = encodeURIComponent(rightHand.value)
+		const left = encodeURIComponent(leftHand.value)
+
+		history.pushState({}, '', `/${right}/${left}`)
 	}
 
 	watch(rightHand, updatePath)
 	watch(leftHand, updatePath)
 
-	const color = ref('white')
+	const color = ref(ColorOptions.WHITE)
 </script>
 
 <style scoped>

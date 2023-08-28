@@ -22,13 +22,13 @@
 		</template>
 	</div>
 </template>
-  
+
 <script setup lang="ts">
 	import { ColorOptions, getColor } from './color-options'
 
 	const props = defineProps<{ default: ColorOptions }>()
 	const emit = defineEmits<{ update: (value: ColorOptions) => void }>()
-  
+
 	const selected = ref(props.default)
 </script>
 
